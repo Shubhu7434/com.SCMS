@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [ParallelSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ParallelTest(failed)">
+    <classes>
+      <class name="Testcase.District">
+        <methods>
+          <include name="CheckGridStatussearch"/>
+          <include name="CheckPageTitle"/>
+          <include name="teardownReport"/>
+          <include name="setup"/>
+          <include name="setupReport"/>
+          <include name="Checkclearfunctionality"/>
+          <include name="tearDown"/>
+          <include name="CheckDistrctLableName"/>
+        </methods>
+      </class> <!-- Testcase.District -->
+      <class name="Testcase.Bit">
+        <methods>
+          <include name="CheckPageTitle"/>
+          <include name="setup"/>
+          <include name="setupReport"/>
+          <include name="CheckvalidationMSG"/>
+          <include name="tearDown"/>
+          <include name="CheckBlockCBEnable"/>
+          <include name="teardownReport"/>
+        </methods>
+      </class> <!-- Testcase.Bit -->
+      <class name="Testcase.Taluka">
+        <methods>
+          <include name="CheckViewPageStatus"/>
+          <include name="setup"/>
+          <include name="teardownReport"/>
+          <include name="setupReport"/>
+          <include name="CheckEditFunctionality"/>
+          <include name="CheckDistrictDrodpownExpand"/>
+          <include name="CheckPageTitle"/>
+          <include name="CheckTalukaBlockFunctionality"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcase.Taluka -->
+    </classes>
+  </test> <!-- ParallelTest(failed) -->
+</suite> <!-- Failed suite [ParallelSuite] -->

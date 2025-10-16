@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="30" passed="18" failed="12" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-15T11:32:23 IST" name="ParallelSuite" finished-at="2025-10-15T11:36:06 IST" duration-ms="223294">
+    <groups>
+    </groups>
+    <test started-at="2025-10-15T11:32:23 IST" name="ParallelTest" finished-at="2025-10-15T11:36:06 IST" duration-ms="223294">
+      <class name="Testcase.District">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:23 IST" name="setupReport" finished-at="2025-10-15T11:32:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:23 IST" name="setup" finished-at="2025-10-15T11:32:32 IST" duration-ms="8288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NavigatePage()[pri:1, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:32 IST" name="NavigatePage" finished-at="2025-10-15T11:32:39 IST" duration-ms="7238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigatePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:39 IST" name="tearDown" finished-at="2025-10-15T11:32:39 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:39 IST" name="setup" finished-at="2025-10-15T11:32:45 IST" duration-ms="6045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckPageTitle()[pri:2, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:45 IST" name="CheckPageTitle" finished-at="2025-10-15T11:32:53 IST" duration-ms="7877" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page Title Not Display Correct expected [District-SCMS] but found [Baramati Agro Ltd. Pimpli , Baramati , Maharashtra , Pune, 413102, India District]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page Title Not Display Correct expected [District-SCMS] but found [Baramati Agro Ltd. Pimpli , Baramati , Maharashtra , Pune, 413102, India District]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.District.CheckPageTitle(District.java:73)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:53 IST" name="tearDown" finished-at="2025-10-15T11:32:54 IST" duration-ms="544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:32:54 IST" name="setup" finished-at="2025-10-15T11:33:01 IST" duration-ms="6773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckDistrctLableName()[pri:3, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:01 IST" name="CheckDistrctLableName" finished-at="2025-10-15T11:33:08 IST" duration-ms="7268" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lable Name Should Not be Display Correct expected [District] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lable Name Should Not be Display Correct expected [District] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.District.CheckDistrctLableName(District.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckDistrctLableName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:08 IST" name="tearDown" finished-at="2025-10-15T11:33:11 IST" duration-ms="2847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:11 IST" name="setup" finished-at="2025-10-15T11:33:16 IST" duration-ms="5729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckValidationMSG()[pri:4, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:16 IST" name="CheckValidationMSG" finished-at="2025-10-15T11:33:26 IST" duration-ms="9292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckValidationMSG -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:26 IST" name="tearDown" finished-at="2025-10-15T11:33:27 IST" duration-ms="1216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:27 IST" name="setup" finished-at="2025-10-15T11:33:31 IST" duration-ms="3825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Checkclearfunctionality()[pri:5, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:31 IST" name="Checkclearfunctionality" finished-at="2025-10-15T11:33:43 IST" duration-ms="12045" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[State Dropdown Details Not Clear expected [Select] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: State Dropdown Details Not Clear expected [Select] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.District.Checkclearfunctionality(District.java:149)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkclearfunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:43 IST" name="tearDown" finished-at="2025-10-15T11:33:43 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:43 IST" name="setup" finished-at="2025-10-15T11:33:48 IST" duration-ms="4595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckcreatenewDistrict()[pri:6, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:33:48 IST" name="CheckcreatenewDistrict" finished-at="2025-10-15T11:34:00 IST" duration-ms="11884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckcreatenewDistrict -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:00 IST" name="tearDown" finished-at="2025-10-15T11:34:00 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:00 IST" name="setup" finished-at="2025-10-15T11:34:07 IST" duration-ms="6811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckgridSearchField()[pri:7, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:07 IST" name="CheckgridSearchField" finished-at="2025-10-15T11:34:13 IST" duration-ms="6239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckgridSearchField -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:13 IST" name="tearDown" finished-at="2025-10-15T11:34:17 IST" duration-ms="3774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:17 IST" name="setup" finished-at="2025-10-15T11:34:21 IST" duration-ms="4650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckGridStatussearch()[pri:8, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:21 IST" name="CheckGridStatussearch" finished-at="2025-10-15T11:34:29 IST" duration-ms="7349" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Status Search Field Not Working Correctly expected [Active] but found [Blocked]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Status Search Field Not Working Correctly expected [Active] but found [Blocked]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.District.CheckGridStatussearch(District.java:257)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckGridStatussearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:29 IST" name="tearDown" finished-at="2025-10-15T11:34:30 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:30 IST" name="setup" finished-at="2025-10-15T11:34:35 IST" duration-ms="4914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Checkblockfunctionality()[pri:9, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:35 IST" name="Checkblockfunctionality" finished-at="2025-10-15T11:34:40 IST" duration-ms="5243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkblockfunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:40 IST" name="tearDown" finished-at="2025-10-15T11:34:45 IST" duration-ms="5367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:45 IST" name="setup" finished-at="2025-10-15T11:34:51 IST" duration-ms="6092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckUnblockfunctionality()[pri:10, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:34:51 IST" name="CheckUnblockfunctionality" finished-at="2025-10-15T11:35:00 IST" duration-ms="8159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckUnblockfunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:35:00 IST" name="tearDown" finished-at="2025-10-15T11:35:03 IST" duration-ms="3629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:Testcase.District@707194ba]" started-at="2025-10-15T11:36:08 IST" name="teardownReport" finished-at="2025-10-15T11:36:08 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownReport -->
+      </class> <!-- Testcase.District -->
+      <class name="Testcase.Bit">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:23 IST" name="setupReport" finished-at="2025-10-15T11:32:23 IST" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:23 IST" name="setup" finished-at="2025-10-15T11:32:32 IST" duration-ms="8679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NavigateBitPage()[pri:1, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:32 IST" name="NavigateBitPage" finished-at="2025-10-15T11:32:37 IST" duration-ms="4787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateBitPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:37 IST" name="tearDown" finished-at="2025-10-15T11:32:39 IST" duration-ms="2438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:39 IST" name="setup" finished-at="2025-10-15T11:32:49 IST" duration-ms="9948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckPageTitle()[pri:2, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:49 IST" name="CheckPageTitle" finished-at="2025-10-15T11:32:51 IST" duration-ms="2182" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page Title Not Display Correct expected [Bit-SCMS] but found [Baramati Agro Ltd. Pimpli , Baramati , Maharashtra , Pune, 413102, India]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page Title Not Display Correct expected [Bit-SCMS] but found [Baramati Agro Ltd. Pimpli , Baramati , Maharashtra , Pune, 413102, India]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.Bit.CheckPageTitle(Bit.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:51 IST" name="tearDown" finished-at="2025-10-15T11:32:53 IST" duration-ms="1515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:53 IST" name="setup" finished-at="2025-10-15T11:32:57 IST" duration-ms="3993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckvalidationMSG()[pri:3, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:32:57 IST" name="CheckvalidationMSG" finished-at="2025-10-15T11:33:05 IST" duration-ms="8438" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Bit Name Field Validation Mesage Not Bind expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Bit Name Field Validation Mesage Not Bind expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Testcase.Bit.CheckvalidationMSG(Bit.java:102)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckvalidationMSG -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:05 IST" name="tearDown" finished-at="2025-10-15T11:33:06 IST" duration-ms="1087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:06 IST" name="setup" finished-at="2025-10-15T11:33:11 IST" duration-ms="4468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Checkclearfunctionality()[pri:4, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:11 IST" name="Checkclearfunctionality" finished-at="2025-10-15T11:33:19 IST" duration-ms="7773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkclearfunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:19 IST" name="tearDown" finished-at="2025-10-15T11:33:21 IST" duration-ms="1919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:21 IST" name="setup" finished-at="2025-10-15T11:33:24 IST" duration-ms="3671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckcreatenewBitDetails()[pri:5, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:24 IST" name="CheckcreatenewBitDetails" finished-at="2025-10-15T11:33:34 IST" duration-ms="9444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckcreatenewBitDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:34 IST" name="tearDown" finished-at="2025-10-15T11:33:35 IST" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:35 IST" name="setup" finished-at="2025-10-15T11:33:39 IST" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckBlockCBEnable()[pri:6, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:39 IST" name="CheckBlockCBEnable" finished-at="2025-10-15T11:33:45 IST" duration-ms="5466" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Create Bit Page Block Check Has Been Enable expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Create Bit Page Block Check Has Been Enable expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at Testcase.Bit.CheckBlockCBEnable(Bit.java:167)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckBlockCBEnable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:45 IST" name="tearDown" finished-at="2025-10-15T11:33:49 IST" duration-ms="4079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:49 IST" name="setup" finished-at="2025-10-15T11:33:54 IST" duration-ms="5397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckEditFunctinality()[pri:7, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:54 IST" name="CheckEditFunctinality" finished-at="2025-10-15T11:33:58 IST" duration-ms="4086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckEditFunctinality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:33:58 IST" name="tearDown" finished-at="2025-10-15T11:34:00 IST" duration-ms="1629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:00 IST" name="setup" finished-at="2025-10-15T11:34:06 IST" duration-ms="5760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckgridSearchFunctionality()[pri:8, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:06 IST" name="CheckgridSearchFunctionality" finished-at="2025-10-15T11:34:11 IST" duration-ms="5493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckgridSearchFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:11 IST" name="tearDown" finished-at="2025-10-15T11:34:12 IST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:12 IST" name="setup" finished-at="2025-10-15T11:34:16 IST" duration-ms="3645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkViewDetailsOpen()[pri:9, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:16 IST" name="checkViewDetailsOpen" finished-at="2025-10-15T11:34:21 IST" duration-ms="5185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkViewDetailsOpen -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:21 IST" name="tearDown" finished-at="2025-10-15T11:34:23 IST" duration-ms="1725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:23 IST" name="setup" finished-at="2025-10-15T11:34:29 IST" duration-ms="5735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Cheeckblockfunctionality()[pri:10, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:29 IST" name="Cheeckblockfunctionality" finished-at="2025-10-15T11:34:33 IST" duration-ms="4916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cheeckblockfunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:33 IST" name="tearDown" finished-at="2025-10-15T11:34:36 IST" duration-ms="2953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:36 IST" name="setup" finished-at="2025-10-15T11:34:42 IST" duration-ms="5369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Checkunblockfunctionality()[pri:11, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:42 IST" name="Checkunblockfunctionality" finished-at="2025-10-15T11:34:45 IST" duration-ms="3197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkunblockfunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:34:45 IST" name="tearDown" finished-at="2025-10-15T11:34:45 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:Testcase.Bit@4c39bec8]" started-at="2025-10-15T11:36:07 IST" name="teardownReport" finished-at="2025-10-15T11:36:08 IST" duration-ms="1444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownReport -->
+      </class> <!-- Testcase.Bit -->
+      <class name="Testcase.Taluka">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:32:23 IST" name="setupReport" finished-at="2025-10-15T11:32:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:34:45 IST" name="setup" finished-at="2025-10-15T11:34:54 IST" duration-ms="8471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NavigatetalukaPage()[pri:1, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:34:54 IST" name="NavigatetalukaPage" finished-at="2025-10-15T11:34:58 IST" duration-ms="4478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigatetalukaPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:34:58 IST" name="tearDown" finished-at="2025-10-15T11:34:59 IST" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:34:59 IST" name="setup" finished-at="2025-10-15T11:35:03 IST" duration-ms="3594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckPageTitle()[pri:2, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:03 IST" name="CheckPageTitle" finished-at="2025-10-15T11:35:06 IST" duration-ms="3123" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page Title Not Display Correct expected [Taluka-SCMS] but found [Baramati Agro Ltd. Pimpli , Baramati , Maharashtra , Pune, 413102, India Taluka Report]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page Title Not Display Correct expected [Taluka-SCMS] but found [Baramati Agro Ltd. Pimpli , Baramati , Maharashtra , Pune, 413102, India Taluka Report]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.Taluka.CheckPageTitle(Taluka.java:81)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:06 IST" name="tearDown" finished-at="2025-10-15T11:35:06 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:06 IST" name="setup" finished-at="2025-10-15T11:35:09 IST" duration-ms="3074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckValidatorMSG()[pri:3, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:09 IST" name="CheckValidatorMSG" finished-at="2025-10-15T11:35:15 IST" duration-ms="6009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckValidatorMSG -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:15 IST" name="tearDown" finished-at="2025-10-15T11:35:16 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:16 IST" name="setup" finished-at="2025-10-15T11:35:20 IST" duration-ms="4124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckDistrictDrodpownExpand()[pri:4, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:20 IST" name="CheckDistrictDrodpownExpand" finished-at="2025-10-15T11:35:26 IST" duration-ms="6394" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Dropdown options are not clickable —  hidden behind Latitude field expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Dropdown options are not clickable —  hidden behind Latitude field expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Testcase.Taluka.CheckDistrictDrodpownExpand(Taluka.java:135)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckDistrictDrodpownExpand -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:26 IST" name="tearDown" finished-at="2025-10-15T11:35:26 IST" duration-ms="302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:26 IST" name="setup" finished-at="2025-10-15T11:35:30 IST" duration-ms="3182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckClearFunctionality()[pri:5, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:30 IST" name="CheckClearFunctionality" finished-at="2025-10-15T11:35:35 IST" duration-ms="4986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckClearFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:35 IST" name="tearDown" finished-at="2025-10-15T11:35:35 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:35 IST" name="setup" finished-at="2025-10-15T11:35:38 IST" duration-ms="2988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckEditFunctionality()[pri:6, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:38 IST" name="CheckEditFunctionality" finished-at="2025-10-15T11:35:42 IST" duration-ms="4239" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Taluka Details Not Update Successfully expected [Taluka has been Updated.] but found [Conversion failed when converting date and/or time from character string.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Taluka Details Not Update Successfully expected [Taluka has been Updated.] but found [Conversion failed when converting date and/or time from character string.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.Taluka.CheckEditFunctionality(Taluka.java:180)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckEditFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:42 IST" name="tearDown" finished-at="2025-10-15T11:35:42 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:42 IST" name="setup" finished-at="2025-10-15T11:35:46 IST" duration-ms="3178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckTalukaBlockFunctionality()[pri:7, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:46 IST" name="CheckTalukaBlockFunctionality" finished-at="2025-10-15T11:35:49 IST" duration-ms="3713" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Taluka Details Not Blocked Successfully expected [District has been Blocked.] but found [Conversion failed when converting date and/or time from character string.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Taluka Details Not Blocked Successfully expected [District has been Blocked.] but found [Conversion failed when converting date and/or time from character string.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.Taluka.CheckTalukaBlockFunctionality(Taluka.java:203)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckTalukaBlockFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:49 IST" name="tearDown" finished-at="2025-10-15T11:35:50 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:50 IST" name="setup" finished-at="2025-10-15T11:35:53 IST" duration-ms="3103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckViewPageStatus()[pri:8, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:53 IST" name="CheckViewPageStatus" finished-at="2025-10-15T11:35:58 IST" duration-ms="4978" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Into Grid Table & Taluka Details Popup Page Status Display Mismatch expected [Blocked] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Into Grid Table & Taluka Details Popup Page Status Display Mismatch expected [Blocked] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at Testcase.Taluka.CheckViewPageStatus(Taluka.java:228)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckViewPageStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:58 IST" name="tearDown" finished-at="2025-10-15T11:35:58 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:35:58 IST" name="setup" finished-at="2025-10-15T11:36:01 IST" duration-ms="3220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CheckGridTableSearchFuenctionality()[pri:9, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:36:01 IST" name="CheckGridTableSearchFuenctionality" finished-at="2025-10-15T11:36:06 IST" duration-ms="4885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckGridTableSearchFuenctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:36:06 IST" name="tearDown" finished-at="2025-10-15T11:36:06 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownReport()[pri:0, instance:Testcase.Taluka@f79e]" started-at="2025-10-15T11:36:08 IST" name="teardownReport" finished-at="2025-10-15T11:36:09 IST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownReport -->
+      </class> <!-- Testcase.Taluka -->
+    </test> <!-- ParallelTest -->
+  </suite> <!-- ParallelSuite -->
+</testng-results>

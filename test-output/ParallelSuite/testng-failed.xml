@@ -3,8 +3,41 @@
 <suite thread-count="2" parallel="classes" name="Failed suite [ParallelSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="2" parallel="classes" name="ParallelTest(failed)">
     <classes>
+      <class name="Testcase.Taluka">
+        <methods>
+          <include name="setup"/>
+          <include name="teardownReport"/>
+          <include name="CheckViewPageStatus"/>
+          <include name="setupReport"/>
+          <include name="CheckEditFunctionality"/>
+          <include name="CheckDistrictDrodpownExpand"/>
+          <include name="CheckPageTitle"/>
+          <include name="CheckTalukaBlockFunctionality"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Testcase.Taluka -->
+      <class name="Testcase.Bit">
+        <methods>
+          <include name="CheckEditFunctinality"/>
+          <include name="Checkclearfunctionality"/>
+          <include name="CheckPageTitle"/>
+          <include name="setup"/>
+          <include name="CheckcreatenewBitDetails"/>
+          <include name="CheckvalidationMSG"/>
+          <include name="CheckBlockCBEnable"/>
+          <include name="CheckgridSearchFunctionality"/>
+          <include name="Cheeckblockfunctionality"/>
+          <include name="NavigateBitPage"/>
+          <include name="setupReport"/>
+          <include name="Checkunblockfunctionality"/>
+          <include name="checkViewDetailsOpen"/>
+          <include name="tearDown"/>
+          <include name="teardownReport"/>
+        </methods>
+      </class> <!-- Testcase.Bit -->
       <class name="Testcase.District">
         <methods>
+          <include name="CheckUnblockfunctionality"/>
           <include name="CheckGridStatussearch"/>
           <include name="CheckPageTitle"/>
           <include name="teardownReport"/>
@@ -15,30 +48,6 @@
           <include name="CheckDistrctLableName"/>
         </methods>
       </class> <!-- Testcase.District -->
-      <class name="Testcase.Bit">
-        <methods>
-          <include name="CheckPageTitle"/>
-          <include name="setup"/>
-          <include name="setupReport"/>
-          <include name="CheckvalidationMSG"/>
-          <include name="tearDown"/>
-          <include name="CheckBlockCBEnable"/>
-          <include name="teardownReport"/>
-        </methods>
-      </class> <!-- Testcase.Bit -->
-      <class name="Testcase.Taluka">
-        <methods>
-          <include name="CheckViewPageStatus"/>
-          <include name="setup"/>
-          <include name="teardownReport"/>
-          <include name="setupReport"/>
-          <include name="CheckEditFunctionality"/>
-          <include name="CheckDistrictDrodpownExpand"/>
-          <include name="CheckPageTitle"/>
-          <include name="CheckTalukaBlockFunctionality"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Testcase.Taluka -->
     </classes>
   </test> <!-- ParallelTest(failed) -->
 </suite> <!-- Failed suite [ParallelSuite] -->

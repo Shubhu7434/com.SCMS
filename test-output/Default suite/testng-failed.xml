@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcase.Bit">
+      <class name="Testcase.PumpMakeTest">
         <methods>
-          <include name="CheckPageTitle"/>
-          <include name="setup"/>
-          <include name="setupReport"/>
-          <include name="CheckvalidationMSG"/>
-          <include name="tearDown"/>
           <include name="teardownReport"/>
-          <include name="CheckBlockCBEnable"/>
+          <include name="Setupreport"/>
+          <include name="verifyPageTitle"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- Testcase.Bit -->
+      </class> <!-- Testcase.PumpMakeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

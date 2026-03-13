@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 
 public class BaseTest {
-	
+
 	public WebDriver driver;
 
 	public void Setup() {
@@ -28,16 +28,11 @@ public class BaseTest {
 	public WebDriver getDriver() {
 		return driver;
 	}
-	
-	
-	
-	
-	  @AfterMethod public void tearDown() { driver.quit();
-	  
-	  }
-	 
-	 
-	 
-	 
+
+	/*
+	 * @AfterMethod public void tearDown() { driver.quit();
+	 * 
+	 * }
+	 */
 
 }

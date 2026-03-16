@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcase.PumpMakeTest">
+      <class name="Testcase.CaneMaturityTest">
         <methods>
-          <include name="teardownReport"/>
-          <include name="Setupreport"/>
-          <include name="verifyPageTitle"/>
+          <include name="setupReport"/>
+          <include name="tearDownReport"/>
           <include name="setup"/>
+          <include name="verifyTonnageFieldValidation"/>
+          <include name="verifyPageTitle"/>
+          <include name="tearDown"/>
+          <include name="verifyRecoverBasevalidation"/>
         </methods>
-      </class> <!-- Testcase.PumpMakeTest -->
+      </class> <!-- Testcase.CaneMaturityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

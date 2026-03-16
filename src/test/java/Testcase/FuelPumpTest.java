@@ -79,7 +79,7 @@ public class FuelPumpTest extends BaseTest {
 
 		FP.NavigatePage();
 		String Actualtitle = getDriver().getTitle();
-		String Expectedtitle = "Fuel Pump - SCMS";
+		String Expectedtitle = "Fuel Pump | CMSERP";
 
 		try {
 			Assert.assertEquals(Actualtitle, Expectedtitle, "Page Title Not Display Correct");

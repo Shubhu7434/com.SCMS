@@ -81,7 +81,7 @@ public class PumpMakeTest extends BaseTest{
 		   PM.NavigatePage();
 		   
 		  String ActualTitle = getDriver().getTitle();
-		  String ExpectedTitle = "Pump Make - SCMS";
+		  String ExpectedTitle = "Pump Make | CMSERP";
 		  
 		  String Screenshotpath = ScreenshotUtil.captureScreenshot(driver, "PumpMakePage");
 			

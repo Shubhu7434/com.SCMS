@@ -76,7 +76,7 @@ public class FuelType extends BaseTest {
 		FT.NavigatePage();
 		
 		String actualtitle = getDriver().getTitle();
-		String expectedtitle = "Fuel Type - SCMS";
+		String expectedtitle = "Fuel Type | CMSERP";
 		
 		try {
 			Assert.assertEquals(actualtitle, expectedtitle, "Page Title Not Display Correct");

@@ -75,8 +75,7 @@ public class Taluka extends BaseTest {
 		TP.NavigatePage();
 
 		String Actutaltitle = getDriver().getTitle();
-		String Expectedtitle = "Taluka-SCMS";
-
+		String Expectedtitle = "Taluka | CMSERP";
 		try {
 			Assert.assertEquals(Actutaltitle, Expectedtitle, "Page Title Not Display Correct");
 			test.pass("Page Title Should Be Display Correct");

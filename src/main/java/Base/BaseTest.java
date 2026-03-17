@@ -5,7 +5,9 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
@@ -28,6 +30,14 @@ public class BaseTest {
 	public WebDriver getDriver() {
 		return driver;
 	}
+
+	/*
+	 * @BeforeMethod public void setUp(ITestContext context) {
+	 * 
+	 * driver = new ChromeDriver();
+	 * 
+	 * // 🔥 VERY IMPORTANT LINE context.setAttribute("driver", driver); }
+	 */
 
 	@AfterMethod
 	public void tearDown() {

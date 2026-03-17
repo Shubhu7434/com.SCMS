@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcase.CaneMaturityTest">
+      <class name="Testcase.VillageWiseHarvestTopLimitTest">
         <methods>
-          <include name="setupReport"/>
-          <include name="tearDownReport"/>
           <include name="setup"/>
-          <include name="verifyTonnageFieldValidation"/>
+          <include name="verifyCreatePaheSearchFieldFunctionality"/>
           <include name="verifyPageTitle"/>
+          <include name="verifyGatDropdowwnDataAvailable"/>
+          <include name="setupReport"/>
           <include name="tearDown"/>
-          <include name="verifyRecoverBasevalidation"/>
+          <include name="tearDownReport"/>
         </methods>
-      </class> <!-- Testcase.CaneMaturityTest -->
+      </class> <!-- Testcase.VillageWiseHarvestTopLimitTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

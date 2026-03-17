@@ -24,6 +24,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import Base.BaseTest;
 import Pages.LoginPage;
+import Utils.ConfigReader;
 import Utils.ScreenshotUtil;
 
 public class Loginpage extends BaseTest {
@@ -47,14 +48,14 @@ public class Loginpage extends BaseTest {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get("http://192.168.18.33:8019/");
+		driver.get(ConfigReader.getProperty("URL"));
 		LP = new LoginPage(driver);
 	}
 
 	@Test(priority = 1)
 	public void VerifyValidLogin() {
 		test = extent.createTest("Verify Login With Valid creadentails");
-		LP.Login("rcplb", "Rcpl@cmserp#1");
+		LP.Login(ConfigReader.getProperty("Username"), ConfigReader.getProperty("Password"));
 
 		WebElement Userlogin = driver.findElement(By.id("page-header-user-dropdown"));
 

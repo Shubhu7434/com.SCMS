@@ -3,6 +3,7 @@ package Testcase;
 import java.awt.Desktop;
 import java.io.File;
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -13,7 +14,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -22,18 +22,18 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import Base.BaseTest;
-import Pages.UserTypePage;
+import Pages.VillageRoutePage;
+import Utils.ScreenshotUtil;
 
-//@Listeners(Utils.TestListener.class)
-public class UserTypeTest extends BaseTest {
+public class VillageRouteTest extends BaseTest {
 
 	WebDriverWait wait;
-	UserTypePage UT;
+	VillageRoutePage VR;
 	ExtentTest test;
 	ExtentReports extent;
 
 	ExtentSparkReporter spark;
-	String Reportpath = "C:\\Reports\\SCMS\\UserTypePage.html";
+	String Reportpath = "C:\\Reports\\SCMS\\VillageRoutePage.html";
 
 	@BeforeSuite
 	public void setupReport() {
@@ -41,7 +41,7 @@ public class UserTypeTest extends BaseTest {
 		extent = new ExtentReports();
 		extent.attachReporter(report);
 		extent.setSystemInfo("Project Name", "SCMS");
-		extent.setSystemInfo("Module", "User Type Page");
+		extent.setSystemInfo("Module", "Village Route  Page");
 		extent.setSystemInfo("Tester", "Shubham Mohite");
 		extent.setSystemInfo("Browser", "Chrome");
 		extent.setSystemInfo("Environment", "QA");
@@ -52,33 +52,34 @@ public class UserTypeTest extends BaseTest {
 	public void setup() {
 		Setup();
 		Login();
-		UT = new UserTypePage(driver);
+		VR = new VillageRoutePage(driver);
+
 	}
 
-	@Test(priority = 1)
-	public void verifyNavigatePage() {
-		test = extent.createTest("Verify User Type Page Open Successfully");
+	@Test()
+	public void verifyNavigationPage() {
+		test = extent.createTest("Verify Village Route Page Open Successfully");
 
-		UT.checkNavigatePage();
-
-		WebElement PageHeaderName = driver.findElement(By.xpath("//h4[text()='User Type']"));
+		VR.checkNavigationPage();
 
 		try {
-			Assert.assertTrue(PageHeaderName.isDisplayed(), "User Type Page Not Open Successfully");
-			test.log(Status.PASS, "User Type  Page Open Successfully");
+			Assert.assertTrue(VR.getPageHeaderName().isDisplayed(), "Village Route Page Not Open Successfully");
+			test.log(Status.PASS, "Village Route Page Open Successfully");
 		} catch (AssertionError e) {
-			test.log(Status.FAIL, "User Type Page Not Open Successfully");
+			test.log(Status.FAIL, "Village Route Page Not Open Successfully");
 			throw e;
 		}
+
 	}
 
-	@Test(priority = 2)
+	@Test(enabled = false)
 	public void verifyPageTitle() {
-		test = extent.createTest("Verify User type Page Title Display Correct");
-		UT.checkNavigatePage();
+		test = extent.createTest("Veerify Village Route Page Title Display Correct");
+
+		VR.checkNavigationPage();
 
 		String actualTitle = getDriver().getTitle();
-		String expectedTitle = "User Type | CMSERP";
+		String expectedTitle = "Village Route | CMSERP";
 
 		try {
 			Assert.assertEquals(actualTitle, expectedTitle, "Page Title Not Display Correct");
@@ -91,57 +92,57 @@ public class UserTypeTest extends BaseTest {
 
 	}
 
-	@Test(priority = 3)
+	@Test(enabled = false)
 	public void verifyValidatorMSG() {
-		test = extent.createTest("Verify Create User Type Page All Mandatory Field Validation Message Bind");
+		test = extent.createTest("Verify Create Village Route Page All Mandatory Field Validation Message Bind");
 
-		UT.checkNavigatePage().checkvalidatorMSG();
-
-		WebElement Userttype = driver.findElement(By.id("validatorUserType"));
-		WebElement UsertypeMarathi = driver.findElement(By.id("validatorUserTypeMar"));
+		VR.checkNavigationPage().chekckValidatorMSG();
 
 		try {
-			Assert.assertTrue(Userttype.isDisplayed(), "User type Field Validation Mesage Not Bind");
-			Assert.assertTrue(UsertypeMarathi.isDisplayed(), "User Type Marathi Field Validation Mesage Not Bind");
-			test.pass("All Mandatory Field Validation Message Bind");
+			Assert.assertTrue(VR.getPlantValidatorMSG().isDisplayed());
+			Assert.assertTrue(VR.getVillageRouteValidatorMSG().isDisplayed());
+
+			test.pass("All Mandatory Field Validation Message Should Bind");
 		} catch (AssertionError e) {
-			test.fail("All Mandatory Field Valiation Message Not Bind");
-		}
-	}
-
-	@Test(priority = 4)
-	public void verifyCreateNewUserTypeFunctionality() {
-		test = extent.createTest("Verify Create New User Type Working Functionality");
-
-		UT.checkNavigatePage().checkCreateNewUserType();
-
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.alertIsPresent());
-
-		Alert alt = driver.switchTo().alert();
-		String actualMSG = alt.getText().trim();
-
-		try {
-			Assert.assertTrue(
-					actualMSG.equals("User Type has been Created.") || actualMSG.equals("User Type already exists."),
-					"Pump Make  Details Not Created Successfully");
-			test.log(Status.PASS, "User Type Details  Created Successfully");
-		} catch (AssertionError e) {
-			test.log(Status.FAIL, "User Type  Details Not Created Successfully");
+			test.fail("All Mandatory Field Validation Message Not Bind");
 			throw e;
 		}
-		alt.accept();
 	}
 
-	@Test(priority = 5)
+	@Test(enabled = false)
+	public void verifyGatDropdownOption() {
+		test = extent.createTest("Verify Gat Dropdown Data Avaiable For Selection");
+
+		VR.checkNavigationPage().checkGatDropdownData();
+
+		List<WebElement> noResult = driver.findElements(By.xpath("//li[contains(text(),'No results found')]"));
+
+		String screenshotpath = ScreenshotUtil.captureScreenshot(driver, "EmptyGatDropdown");
+
+		try {
+
+			Assert.assertEquals(noResult.size(), 0, "Gat dropdown has no options");
+
+			test.log(Status.PASS, "Gat dropdown options displayed successfully");
+
+		} catch (AssertionError e) {
+
+			test.log(Status.FAIL, "Gat Drodown Options Not Available For Select ,  'No results found' Message Display ")
+					.addScreenCaptureFromPath(screenshotpath);
+			throw e;
+		}
+
+	}
+	
+	@Test(enabled = false)
 	public void verifyGridSearchFunctionality() {
-		test = extent.createTest("Verify User Type Page Grid Table Serch Field Working Functionality");
-
-		UT.checkNavigatePage().checkGridSearchFunctionality();
-
-		WebElement Searchtext = driver.findElement(By.xpath("//table[@id='tblData']//td[3]"));
+		test = extent.createTest("Verify Grid Table Search Filrd Working Functionality");
+		VR.checkNavigationPage()
+		  .checkGridSearch();
+		
+		WebElement Searchtext = driver.findElement(By.xpath("//table[@id='tblData']//tr[1]//td[4]"));
 		String Actualtext = Searchtext.getText().trim();
-		String Expectedtext = "Sales & Executive";
+		String Expectedtext = "LOHARA";
 
 		try {
 			Assert.assertEquals(Actualtext, Expectedtext, "Enter Search Related Data No Load Into grid Table");
@@ -151,33 +152,34 @@ public class UserTypeTest extends BaseTest {
 			throw e;
 		}
 	}
-
-	@Test(priority = 6)
-	public void verifyBlockFunctionality() throws InterruptedException {
-		test = extent.createTest("Verify User Type Details Block Working Functionality");
-
-		UT.checkNavigatePage().checkBlockFunctionality();
-
+	
+	@Test(enabled = false)
+	public void verifyBlockRouteDetailsFuctionality() throws InterruptedException {
+		test = extent.createTest("Verify Village Route Detals Block Working Functionality");
+		
+		VR.checkNavigationPage()
+		  .checkBlockFunctionality();
+		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.alertIsPresent());
 
 		Alert alt = driver.switchTo().alert();
 		String ActualMSG = alt.getText().trim();
-		String ExpectedMSG = "User Type has been Blocked.";
+		String ExpectedMSG = "Village Route has been Blocked.";
 
 		try {
 			Assert.assertEquals(ActualMSG, ExpectedMSG,
-					"User Type Block Success Message Not Display Correct :" + ActualMSG);
-			test.log(Status.PASS, "User type Details Blocked Successfully And Success Message Display Correct");
+					"Village Route Block Success Message Not Display Correct :" + ActualMSG);
+			test.log(Status.PASS, "Village Route Details Blocked Successfully And Success Message Display Correct");
 		} catch (AssertionError e) {
-			test.log(Status.FAIL, "User Type Block Success Message Not Display Correct :" + ActualMSG + "Display");
+			test.log(Status.FAIL, "Village Route Block Success Message Not Display Correct :" + ActualMSG + "Display");
 			throw e;
 		}
 		alt.accept();
 
 		Thread.sleep(500);
 
-		WebElement status = driver.findElement(By.xpath("//table[@id='tblData']//tr[1]//td[5]"));
+		WebElement status = driver.findElement(By.xpath("//table[@id='tblData']//tr[1]//td[13]"));
 		String Actualstatus = status.getText().trim();
 		String Expectedstatus = "Blocked";
 
@@ -189,33 +191,34 @@ public class UserTypeTest extends BaseTest {
 			throw e;
 		}
 	}
-
-	@Test(priority = 7)
-	public void verifyUnblockFunctionality() throws InterruptedException {
-		test = extent.createTest("Verify User Type Details Unblock Working Functionality");
-
-		UT.checkNavigatePage().checkUnblockFunctionality();
-
+	
+	@Test(enabled = false)
+	public void verifyUnblockRouteFunctionality() throws InterruptedException {
+		test = extent.createTest("Verify Vehicle Route Dtails Unblock Working Functionality");
+		
+		VR.checkNavigationPage()
+		.checkUnblockFunctionality();
+		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.alertIsPresent());
 
 		Alert alt = driver.switchTo().alert();
 		String ActualMSG = alt.getText().trim();
-		String ExpectedMSG = "User Type has been Activated.";
+		String ExpectedMSG = "Village Route has been Activated.";
 
 		try {
 			Assert.assertEquals(ActualMSG, ExpectedMSG,
-					"User Type Unblock Success Message Not Display Correct :" + ActualMSG);
-			test.log(Status.PASS, "User type Details Unblocked Successfully And Success Message Display Correct");
+					"Village Route Unblock Success Message Not Display Correct :" + ActualMSG);
+			test.log(Status.PASS, "Village Route Details Unblocked Successfully And Success Message Display Correct");
 		} catch (AssertionError e) {
-			test.log(Status.FAIL, "User Type Unblock Success Message Not Display Correct :" + ActualMSG + "Display");
+			test.log(Status.FAIL, "Village Route Unblock Success Message Not Display Correct :" + ActualMSG + "Display");
 			throw e;
 		}
 		alt.accept();
 
 		Thread.sleep(500);
 
-		WebElement status = driver.findElement(By.xpath("//table[@id='tblData']//tr[1]//td[5]"));
+		WebElement status = driver.findElement(By.xpath("//table[@id='tblData']//tr[1]//td[13]"));
 		String Actualstatus = status.getText().trim();
 		String Expectedstatus = "Active";
 
@@ -226,7 +229,11 @@ public class UserTypeTest extends BaseTest {
 			test.log(Status.FAIL, "After Block Grid Table Status Not update Correctly");
 			throw e;
 		}
+		
+		
 	}
+	
+	
 
 	@AfterSuite
 	public void tearDownReport() {

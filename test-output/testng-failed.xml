@@ -3,17 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcase.VillageWiseHarvestTopLimitTest">
+      <class name="Testcase.SeedtreatmentTest">
         <methods>
-          <include name="setup"/>
-          <include name="verifyCreatePaheSearchFieldFunctionality"/>
+          <include name="tearDownReport"/>
           <include name="verifyPageTitle"/>
-          <include name="verifyGatDropdowwnDataAvailable"/>
+          <include name="verifyEditPageBlockCheckboxSelected"/>
+          <include name="verifyViewPageStats"/>
+          <include name="verifyViewPageData"/>
+          <include name="setup"/>
+          <include name="verifyEditPageDataBind"/>
           <include name="setupReport"/>
           <include name="tearDown"/>
-          <include name="tearDownReport"/>
         </methods>
-      </class> <!-- Testcase.VillageWiseHarvestTopLimitTest -->
+      </class> <!-- Testcase.SeedtreatmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

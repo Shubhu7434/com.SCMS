@@ -160,7 +160,7 @@ public class VillageWiseHarvestTopLimitTest extends BaseTest {
 	}
 
 	@Test(priority = 6)
-	public void verifyCreatePaheSearchFieldFunctionality() {
+	public void verifyCreatePageSearchFieldFunctionality() {
 		test = extent.createTest("Verify Create Hervest Top Limit Page grid Table Search Field Working Funcionality");
 
 		VHL.checkNavigationPage().checkCreatePageSearchField();

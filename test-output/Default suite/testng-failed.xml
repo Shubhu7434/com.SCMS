@@ -3,19 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcase.SeedtreatmentTest">
+      <class name="Testcase.NumberTakerReaonTest">
         <methods>
           <include name="tearDownReport"/>
           <include name="verifyPageTitle"/>
-          <include name="verifyEditPageBlockCheckboxSelected"/>
-          <include name="verifyViewPageStats"/>
-          <include name="verifyViewPageData"/>
-          <include name="setup"/>
-          <include name="verifyEditPageDataBind"/>
+          <include name="verifyViewPageName"/>
+          <include name="verifyEditPageName"/>
           <include name="setupReport"/>
+          <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Testcase.SeedtreatmentTest -->
+      </class> <!-- Testcase.NumberTakerReaonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

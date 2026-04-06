@@ -80,6 +80,12 @@ public class BasePage<T> {
 
     @FindBy(xpath = "(//i[@title='Unblock'])[1]")
     private WebElement Unblockicon;
+    
+    @FindBy(xpath = "//a[contains(text(),' H&T Bill')]")
+    private WebElement HandTmenu;
+    
+    @FindBy(xpath = "(//a[contains(text(),' Cane Yard')])[1]")
+    private WebElement CaneYardMenu;
 
     // ===== COMMON ACTIONS =====
 
@@ -117,5 +123,14 @@ public class BasePage<T> {
 
     public T clickUnblock() {
         return jsClick(Unblockicon);
+    }
+    
+    public T clickHandTMenu() {
+    	return click(HandTmenu);
+    	
+    }
+    
+    public T clickCaneYardMenu() {
+    	return click(CaneYardMenu);
     }
 }
